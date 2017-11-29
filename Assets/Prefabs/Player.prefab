@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 114795773638992278}
   - component: {fileID: 114713649551450000}
   - component: {fileID: 114256014026592456}
+  - component: {fileID: 114225112485089476}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -397,7 +398,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1540490609704840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4667977136608430}
@@ -675,6 +676,21 @@ MonoBehaviour:
   currentHealth: 0
   flashSpeed: 5
   flashColor: {r: 1, g: 0, b: 0, a: 0.1}
+--- !u!114 &114225112485089476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1540490609704840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8866afa7978a0b14b9f8ccdd3e512419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 114661683761521362, guid: 66fb54eb34079254e84ba0d163598dbd, type: 2}
+  - {fileID: 114789527058772000, guid: c8bd11975ba16564c97cfb6e1c3b4de0, type: 2}
+  currentItem: 0
 --- !u!114 &114256014026592456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -737,6 +753,7 @@ MonoBehaviour:
     wire: 0
   inventoryItems: []
   hotbar: {fileID: 0}
+  ui: {fileID: 0}
 --- !u!114 &114795773638992278
 MonoBehaviour:
   m_ObjectHideFlags: 1
