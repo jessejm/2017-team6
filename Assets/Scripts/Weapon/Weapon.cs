@@ -7,7 +7,7 @@ public abstract class Weapon : Item
 	protected List<ItemStat> stats_Weapon = new List<ItemStat> {
 		new ItemStat {name="Bullet Damage",field="Damage",baseVal=20,canUpgrade=true,increaseOnLv=true,increment=2,limit=50},
 		new ItemStat {name="Range",field="Range",baseVal=20,canUpgrade=true,increaseOnLv=true,increment=2,limit=30},
-		new ItemStat {name="Accuracy",field="Radius",baseVal=2,canUpgrade=true,increaseOnLv=false,increment=0.25f,limit=0.25f},
+		new ItemStat {name="Variance",field="Radius",baseVal=2,canUpgrade=true,increaseOnLv=false,increment=0.25f,limit=0.25f},
 		new ItemStat {name="Shot Delay",field="TimeBetweenShots",baseVal=0.15f,canUpgrade=true,increaseOnLv=false,increment=0.025f,limit=0.0125f},
 		new ItemStat {name="Reload Time",field="ReloadTime",baseVal=5,canUpgrade=true,increaseOnLv=false,increment=0.25f,limit=1},
 		new ItemStat {name="Clip Size",field="ClipSize",baseVal=30,canUpgrade=true,increaseOnLv=true,increment=5,limit=80}
